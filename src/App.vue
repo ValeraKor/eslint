@@ -14,16 +14,23 @@
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
+<style lang="scss">
   .logo {
+    display: block;
     height: 6em;
     padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
+    background-color: #42b883aa;
+    border: #42b883aa 1px solid;
     filter: drop-shadow(0 0 2em #646cffaa);
+    transition: filter 300ms;
+    will-change: filter;
   }
+
+  .logo:hover {
+    bottom: 0;
+    text-emphasis: none;
+  }
+
   .logo.vue:hover {
     filter: drop-shadow(0 0 2em #42b883aa);
   }
