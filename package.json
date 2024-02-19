@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore --fix",
     "stylelint": "stylelint \"**/*.{vue,css,scss}\"",
-    "prepare": "husky"
+    "stylelint:fix": "stylelint \"**/*.{vue,css,scss}\" --fix"
   },
   "dependencies": {
     "vue": "^3.4.15"
