@@ -11,11 +11,13 @@
     },
     {
       "files": ["*.vue", "**/*.vue"],
-      "extends": [
-        "stylelint-config-standard-scss",
-        "stylelint-config-standard-vue/scss"
-      ]
+      "extends": ["stylelint-config-standard-scss", "stylelint-config-standard-vue/scss"]
     }
   ],
-  "plugins": ["stylelint-order"]
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "rule-empty-line-before": "never"
+  }
 }

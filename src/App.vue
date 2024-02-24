@@ -1,5 +1,8 @@
 <script setup lang="ts">
-  import HelloWorld from './components/HelloWorld.vue';
+  import HelloWorld from '@/components/HelloWorld.vue';
+  const a = e => {
+    console.log(123);
+  };
 </script>
 
 <template>

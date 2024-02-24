@@ -9,7 +9,8 @@
     "plugin:vue/vue3-essential",
     "plugin:vue/vue3-recommended",
     "plugin:vue/vue3-strongly-recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
   ],
   "overrides": [
     {
@@ -29,6 +30,30 @@
   },
   "plugins": ["@typescript-eslint", "vue"],
   "rules": {
-    "prettier/prettier": ["warn", { "endOfLine": "auto" }]
+    // "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": ["script", "template", "style"]
+      }
+    ],
+    "vue/padding-line-between-blocks": "error",
+    "vue/multi-word-component-names": "off",
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      {
+        "registeredComponentsOnly": true,
+        "ignores": []
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "./src/"]],
+        "extensions": [".js", ".vue", ".ts"]
+      }
+    }
   }
 }
