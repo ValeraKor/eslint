@@ -16,3 +16,25 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+settings.json VSCode
+
+{
+"eslint.format.enable": true,
+"editor.codeActionsOnSave": {
+"source.fixAll": "explicit",
+"source.fixAll.stylelint": "explicit"
+},
+"files.associations": {
+"_.xml": "html",
+"_.svg": "html"
+},
+"eslint.validate": ["javascript", "javascriptreact", "vue"],
+"stylelint.validate": ["scss", "vue", "css"]
+}
+
+extensions.json
+
+{
+"recommendations": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
+}

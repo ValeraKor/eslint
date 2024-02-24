@@ -1,8 +1,5 @@
 <script setup lang="ts">
   import HelloWorld from '@/components/HelloWorld.vue';
-  const a = e => {
-    console.log(123);
-  };
 </script>
 
 <template>
@@ -28,12 +25,10 @@
     transition: filter 300ms;
     will-change: filter;
   }
-
   .logo:hover {
     bottom: 0;
     text-emphasis: none;
   }
-
   .logo.vue:hover {
     filter: drop-shadow(0 0 2em #42b883aa);
   }
