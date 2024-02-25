@@ -17,24 +17,8 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-settings.json VSCode
+## Husky activate
 
-{
-"eslint.format.enable": true,
-"editor.codeActionsOnSave": {
-"source.fixAll": "explicit",
-"source.fixAll.stylelint": "explicit"
-},
-"files.associations": {
-"_.xml": "html",
-"_.svg": "html"
-},
-"eslint.validate": ["javascript", "javascriptreact", "vue"],
-"stylelint.validate": ["scss", "vue", "css"]
-}
+```
+npx husky
 
-extensions.json
-
-{
-"recommendations": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
-}
