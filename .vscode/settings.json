@@ -1,0 +1,13 @@
+{ 
+    "eslint.format.enable": true, 
+    "editor.codeActionsOnSave": { 
+        "source.fixAll": "explicit", 
+        "source.fixAll.stylelint": "explicit" 
+    }, 
+    "files.associations": { 
+            ".xml": "html", 
+            ".svg": "html" 
+        }, 
+    "eslint.validate": ["javascript", "javascriptreact", "vue", "json" ], 
+    "stylelint.validate": ["scss", "vue", "css"] 
+}

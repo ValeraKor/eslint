@@ -1,9 +1,16 @@
 <script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue';
+  import HelloWorld from "@/components/HelloWorld.vue";
+  interface Props {
+    test: string;
+  }
+  withDefaults(defineProps<Props>(), {
+    test: "asdadas"
+  });
 </script>
 
 <template>
   <div>
+    {{ test }}
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -22,8 +29,6 @@
     background-color: #42b883aa;
     border: #42b883aa 1px solid;
     filter: drop-shadow(0 0 2em #646cffaa);
-    transition: filter 300ms;
-    will-change: filter;
   }
   .logo:hover {
     bottom: 0;

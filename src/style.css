@@ -5,8 +5,8 @@
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-synthesis: none;
   background-color: #242424;
+  font-synthesis: none;
   color-scheme: light dark;
   text-rendering: optimizelegibility;
 }
