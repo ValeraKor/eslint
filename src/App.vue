@@ -4,7 +4,7 @@
     test: string;
   }
   withDefaults(defineProps<Props>(), {
-    test: "asdadas"
+    test: "asdaasddas"
   });
 </script>
 
